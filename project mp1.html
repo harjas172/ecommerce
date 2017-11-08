@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <title>Prospect</title>
+    <style>
+         img{
+             width:200px;
+
+        }
+        input{
+            width:150px
+
+        }
+
+        body {
+            background-color:turquoise;
+}
+
+        h1 {
+            color:whitesmoke;
+            text-align: top;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 12px;
+        }
+
+        .button {
+            padding: 40px 40px;
+            font-size: 30px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: whitesmoke;
+            background-color: black;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 100px white;
+}
+
+.button:hover {background-color: #3e8e41}
+   
+        
+        </style>
+        <script>
+
+        function purchase(){
+            var quantity1 = document.getElementById("quantity1")
+            var quantity2 = document.getElementById("quantity2")
+            var quantity3 = document.getElementById("quantity3")
+            var price1 = 1200.00
+            var price2 = 8500.00
+            var price3 = 18500.00
+            var subtotal = (price1 * quantity1) + (price2 * quantity2) + (price3 * quantity3)
+            var subcust = (price1 * quantity1) + (price2 * quantity2) + (price3 * quantity3)
+            var totprod = (quantity1 + quantity2 + quantity3)
+            var profit = subcust - subcomp
+            var total = (subtotal + shipping) * 1.0875
+            var shipping = 0.00
+            if (subtotal<=100)
+                shipping = 25.00;
+            if (subtotal>100 && subtotal<=200)
+                shipping = 10.00;
+            if (subtotal>=200)
+                shipping = 0.00;
+
+            var build="";
+            build+="Your subtotal is: "+ subtotal +"<br>";
+            build+="Tax is 8.75% " +"<br>";
+            build+="Shipping fee is: "+ shipping +"<br>";
+            build+="------------------<br>";
+            build+="Your total is:  "+ total +"<br>";
+
+            output.innerHTML =build;
+
+            console.log("The Company sold" + totprod + "products")
+            console.log("Profit of Company: " + profit)
+        }
+
+    </script>
+    <body>
+        <h2>
+            <font-size: 25pt>
+        </h2>               
+                
+        <h1>PROSPECT</h1>
+        <p>Get In The Game.</p>
+
+    </script>
+    </head> 
+    <body>
+        <div>
+            <h3> Air Jordan Retro 4 "KAWS" <h3>
+            <img src="shoe 1.jpg">
+            <img src="shoe 1.5.jpg"><br>
+            <span>$1,200.00</span>
+            <p>
+                Famed artist KAWS has been rather recluse since discontinuing his <br>
+                streetwear brand OriginalFake, only showing face for the occasional <br>
+                high art project or worthwhile collaboration. Jordan Brand commission <br>
+                him for the latter; his canvas: the Air Jordan 4. The result, magnificent. <br>
+                 The KAWS x Air Jordan 4 features a buttery premium suede upper in smooth <br>
+                 and heathered textures, all drenched in a tonal grey colorway. KAWS hand <br>
+                 graphics are etched into the upper as well, along with the matching hang <br>
+                 tag. The midsole and upper “Wings” are also wrapped in suede. Finally, a <br>
+                 glow in the dark sole completes the look.<br>
+            </p> 
+            <input id= "quantity1" type="text" placeholder = "Quantity"> 
+
+    <body>
+        <select>
+            <option value="Choose Size Below">Size</option>
+            <option value="7.5">7.5</option>
+            <option value="8">8</option>
+            <option value="8.5">8.5</option>
+            <option value="9">9</option>
+            <option value="9.5">9.5</option>
+            <option value="10">10</option>
+            <option value="10.5">10.5</option>
+        </select>
+    <body>
+      
+        </div>
+         <div>
+            <h3> Air Yeezy 2 "Red October" By Kanye West <h3>
+            <img src="shoe 2.png">
+            <img src= "shoe 2.5.png"><br>
+            <span>$8,500.00</span>
+            <p>
+            Lauded for its bold tonal colorway, but also rooted in controversy,<br> 
+            the mega-hyped Air Yeezy 2 "Red October" by Kanye West marks the end<br>
+            of his collaborative relationship with Nike. The landmark sneaker <br>
+            singlehandedly created the all-red movement within the sneaker world <br>
+            that's been constant since it released without warning on February 9, <br>
+            2014. Ye debuted the “Red October” colorway during a live performance on <br>
+            'Saturday Night Live' almost a year prior, causing a stir among talking <br>
+            heads. Highly sought after and often imitated, there's no substitute for <br>
+            the ubiquitous "Red October" Yeezy 2 as it marks the end an all-time <br>
+            great era in sneaker history.<br>
+            </p>
+            <input id= "quantity2" type="text" placeholder = "Quantity">
+    <body>
+        <select>
+            <option value="Choose Size Below">Size</option>
+            <option value="7.5">7.5</option>
+            <option value="8">8</option>
+            <option value="8.5">8.5</option>
+            <option value="9">9</option>
+            <option value="9.5">9.5</option>
+            <option value="10">10</option>
+            <option value="10.5">10.5</option>
+        </select>
+    
+       </div>
+        <div>
+            <h3> Air Jordan Retro 4 "Eminem" <h3>
+            <img src="shoe 3.png">
+            <img src="shoe 3.5.png"><br>
+            <span>$18,500.00</span>
+            <p>
+            The new holy grail of Air Jordan 4 releases, this ultra-limited edition <br>
+            from Eminem and Carhartt features a black twill upper with hockey mask <br>
+            and “E” detailing on each heel tab. Silver accents and a cloudy clear <br>
+            outsole finish off the amazing execution. <br>
+            </p>
+            <input id= "quantity3" type="text" placeholder = "Quantity">
+
+    <body>
+        <select>
+            <option value="Choose Size Below">Size</option>
+            <option value="7.5">7.5</option>
+            <option value="8">8</option>
+            <option value="8.5">8.5</option>
+            <option value="9">9</option>
+            <option value="9.5">9.5</option>
+            <option value="10">10</option>
+            <option value="10.5">10.5</option>
+        </select>
+    <body>
+
+        </div> 
+        <div id = "output"></div>
+
+       <button onclick="button">Purchase</button>
+      
+
+        
+        
+        <h1>PROSPECT</h1>
+        <p>Thank You For Shopping Here! Please Come Again</p>
+
+    </script>
+        
+    <body>
+
+    </body>
+        }
+
+   
